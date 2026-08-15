@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // Applique le thème sauvegardé avant le rendu pour éviter un flash de la mauvaise couleur
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Mahdi Belhadj Sassi</title>
+  <meta name="description" content="Articles de Mahdi Belhadj Sassi sur le développement web, PHP, JavaScript, Flutter et WordPress.">
+  <meta property="og:title" content="Blog — Mahdi Belhadj Sassi">
+  <meta property="og:description" content="Articles sur le développement web, PHP, JavaScript, Flutter et WordPress.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://mahdibhs.github.io/blog.html">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="brand">Mahdi<span class="dot">.</span>dev</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="blog.html" aria-current="page">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        <button class="theme-toggle" aria-label="Passer en mode sombre">🌙</button>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">notes &amp; articles</p>
+      <h1>Blog</h1>
+      <p>Retours d'expérience et notes techniques sur le développement web, PHP, JavaScript, Flutter et WordPress.</p>
+    </section>
+
+    <section class="section">
+      <div class="container blog-layout">
+
+        <div>
+          <div class="blog-controls reveal">
+            <input type="search" id="blog-search" class="search-input" placeholder="Rechercher un article…" aria-label="Rechercher un article">
+          </div>
+
+          <div id="posts-list" class="posts-list reveal reveal-delay-1">
+            <!-- Généré dynamiquement par assets/js/blog.js à partir de blog/posts.json -->
+          </div>
+
+          <div id="pagination" class="pagination"></div>
+        </div>
+
+        <aside>
+          <div class="sidebar-box reveal">
+            <h3>Catégories</h3>
+            <ul class="category-list" id="category-list"></ul>
+          </div>
+          <div class="sidebar-box reveal reveal-delay-1">
+            <h3>Tags</h3>
+            <div class="tag-cloud" id="tag-cloud"></div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Mahdi.dev</p>
+          <p>Développeur web &amp; PHP basé en Tunisie, ouvert aux opportunités et aux collaborations.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:mahdi.belhadjsassi@example.com">mahdi.belhadjsassi@example.com</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Mahdi Belhadj Sassi. Tous droits réservés.</p>
+        <div class="social-row">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="mailto:mahdi.belhadjsassi@example.com" aria-label="Email">@</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/effects.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>
