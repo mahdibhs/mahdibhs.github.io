@@ -1,0 +1,7 @@
+Placez ici votre CV au format PDF sous le nom exact :
+
+CV-Mahdi-Belhadj-Sassi.pdf
+
+Le bouton "Télécharger mon CV" du site pointe déjà vers ce fichier
+(assets/cv/CV-Mahdi-Belhadj-Sassi.pdf). Une fois le PDF ajouté, vous pouvez
+supprimer ce fichier texte.

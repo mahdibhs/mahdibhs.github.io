@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "demarrer-avec-php-8",
+    "title": "Démarrer avec PHP 8 : ce qui change vraiment",
+    "date": "2026-06-02",
+    "category": "PHP",
+    "tags": ["php", "backend", "debutant"],
+    "excerpt": "Un tour d'horizon pratique des nouveautés de PHP 8 qui changent réellement la façon d'écrire du code au quotidien.",
+    "file": "demarrer-avec-php-8.md"
+  },
+  {
+    "slug": "organiser-son-css-a-grande-echelle",
+    "title": "Organiser son CSS à grande échelle avec des variables",
+    "date": "2026-05-18",
+    "category": "Front-End",
+    "tags": ["css", "architecture", "design-system"],
+    "excerpt": "Comment structurer ses feuilles de style avec des variables CSS pour garder un projet lisible même quand il grandit.",
+    "file": "organiser-son-css-a-grande-echelle.md"
+  },
+  {
+    "slug": "premiers-pas-avec-flutter",
+    "title": "Premiers pas avec Flutter quand on vient du web",
+    "date": "2026-04-27",
+    "category": "Mobile",
+    "tags": ["flutter", "dart", "mobile"],
+    "excerpt": "Les concepts clés de Flutter expliqués avec des parallèles simples pour un développeur qui vient du HTML/CSS/JS.",
+    "file": "premiers-pas-avec-flutter.md"
+  },
+  {
+    "slug": "wordpress-theme-sur-mesure",
+    "title": "Construire un thème WordPress sur-mesure, étape par étape",
+    "date": "2026-03-11",
+    "category": "WordPress",
+    "tags": ["wordpress", "php", "cms"],
+    "excerpt": "La méthode que j'utilise pour partir d'une maquette et livrer un thème WordPress propre, rapide et facile à maintenir.",
+    "file": "wordpress-theme-sur-mesure.md"
+  },
+  {
+    "slug": "git-workflow-solo-et-equipe",
+    "title": "Un workflow Git simple, en solo comme en équipe",
+    "date": "2026-02-09",
+    "category": "Outils",
+    "tags": ["git", "workflow", "collaboration"],
+    "excerpt": "Les commandes et l'organisation de branches que j'utilise réellement, sans complexité inutile.",
+    "file": "git-workflow-solo-et-equipe.md"
+  }
+]
